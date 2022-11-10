@@ -21,21 +21,22 @@ decimal FibonacciIteration(int n)
     }
     return result;
 }
-DateTime dt = DateTime.Now;
-System.Console.WriteLine((DateTime.Now - dt).TotalMilliseconds);
 
 Console.ReadLine();
-for (int n = 10; n < 40; n++)
-{
-    Console.WriteLine($"FibonacciIteration ({n}) = {FibonacciIteration(n)} fIte = {fIte.ToString("### ### ###")- 15}");
-}
 DateTime dt = DateTime.Now;
+for (int n = 1; n < 5; n++)
+{
+    Console.WriteLine($"FibonacciIteration ({n}) = {FibonacciIteration(n)} fIte = {fIte.ToString("### ### ###"),-15}");
+}
 System.Console.WriteLine((DateTime.Now - dt).TotalMilliseconds);
-Console.WriteLine;
+
+Console.WriteLine();
 
 Console.ReadLine();
-for (int n = 10; n < 40; n++)
+dt = DateTime.Now;
+for (int n = 1; n < 5; n++)
 {
-    Console.WriteLine($"FibonacciRecurcion ({n}) = {FibonacciRecursion(n)} fRec = {fRec.ToString("### ### ###") - 15}");
+    Console.WriteLine($"FibonacciRecurcion ({n}) = {FibonacciRecursion(n)} fRec = {fRec.ToString("### ### ###"),-15}");
 }
+System.Console.WriteLine((DateTime.Now - dt).TotalMilliseconds);
 Console.ReadLine();
